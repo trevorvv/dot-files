@@ -14,6 +14,11 @@
 ;; opening buffer
 (setq initial-buffer-choice "~/")
 
+;; get rid of top bloat
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+
 ;; relative linum
 (require 'linum-relative)
 (linum-relative-global-mode)
