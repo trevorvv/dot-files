@@ -14,6 +14,9 @@
 ;; opening buffer
 (setq initial-buffer-choice "~/")
 
+;; set font
+(set-default-font "Consolas 11")
+
 ;; get rid of top bloat
 (tool-bar-mode -1)
 (menu-bar-mode -1)
