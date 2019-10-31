@@ -1,6 +1,6 @@
 " set syntax
 syntax on 
-
+colorscheme darcula
 " show line numbers, and make it relative 
 set number
 set relativenumber
