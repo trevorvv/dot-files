@@ -129,6 +129,8 @@ alias nf='clear && neofetch'
 alias top='htop'
 alias ping='ping -c3'
 alias vim='sudo vim'
+alias e='emacs'
+alias net='ip addr'
 
 [ -e "/etc/DIR_COLORS" ] && DIR_COLORS="/etc/DIR_COLORS"
 [ -e "$HOME/.dircolors" ] && DIR_COLORS="$HOME/.dircolors"
