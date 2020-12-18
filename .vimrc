@@ -1,15 +1,8 @@
-" set syntax
-syntax on 
-colorscheme darcula
-" show line numbers, and make it relative 
+syntax on
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set number
-set relativenumber
-
-" dont be vi compatible 
-set nocompatible 
-
-" encoding
-set encoding=utf-8
-
-" file stats
+set hlsearch
 set ruler
+highlight Comment ctermfg=green
