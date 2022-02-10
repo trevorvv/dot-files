@@ -61,7 +61,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\033[01;30m\]\u@\h\[\033[01;34m\] \w\[\033[01;31m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 
 unset color_prompt force_color_prompt
@@ -80,10 +80,9 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
+alias ll='ls -la'
+alias la='ls -la'
 alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -117,11 +116,12 @@ set -o vi
 # aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias la='ls -a'
-alias ll='ls -l'
+alias la='ls -la'
+alias ll='ls -la'
 alias c='clear'
 alias ping='ping -c3'
 alias net='ip addr'
+alias bashtop='snap run bashtop'
 
 [ -e "/etc/DIR_COLORS" ] && DIR_COLORS="/etc/DIR_COLORS"
 [ -e "$HOME/.dircolors" ] && DIR_COLORS="$HOME/.dircolors"
