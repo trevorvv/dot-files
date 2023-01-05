@@ -6,20 +6,12 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+-- tools
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	   -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use({
-      'projekt0n/github-nvim-theme',
-      config = function()
-          require('github-theme').setup({
-              -- ...
-          })
-      end
-  })
-  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
@@ -44,4 +36,11 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use('nvie/vim-flake8')
+  use('tell-k/vim-autopep8')
+-- themes
+--
+--
+--
+  use('rebelot/kanagawa.nvim')
 end)

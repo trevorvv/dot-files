@@ -104,36 +104,30 @@ _G.packer_plugins = {
     path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["darcula-solid.nvim"] = {
+  ["eclipse.vim"] = {
     loaded = true,
-    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/darcula-solid.nvim",
-    url = "https://github.com/briones-gabriel/darcula-solid.nvim"
+    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/eclipse.vim",
+    url = "https://github.com/vim-scripts/eclipse.vim"
   },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["github-nvim-theme"] = {
-    config = { "\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17github-theme\frequire\0" },
-    loaded = true,
-    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
   harpoon = {
     loaded = true,
     path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -179,14 +173,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-autopep8"] = {
+    loaded = true,
+    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/vim-autopep8",
+    url = "https://github.com/tell-k/vim-autopep8"
+  },
+  ["vim-flake8"] = {
+    loaded = true,
+    path = "/Users/trevor.vanveen/.local/share/nvim/site/pack/packer/start/vim-flake8",
+    url = "https://github.com/nvie/vim-flake8"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: github-nvim-theme
-time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
-time([[Config for github-nvim-theme]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
