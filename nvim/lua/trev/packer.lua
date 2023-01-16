@@ -12,7 +12,12 @@ return require('packer').startup(function(use)
 	   -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use 'nvim-treesitter/nvim-treesitter'
+
+  use { -- Additional text objects via treesitter
+  'nvim-treesitter/nvim-treesitter-textobjects',
+  after = 'nvim-treesitter',
+  }
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
   use {
@@ -36,11 +41,22 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-  use('nvie/vim-flake8')
-  use('tell-k/vim-autopep8')
--- themes
---
---
---
-  use('rebelot/kanagawa.nvim')
+  use 'folke/neodev.nvim'
+  use 'j-hui/fidget.nvim'
+
+  -- python related
+  use 'nvie/vim-flake8'
+  use 'tell-k/vim-autopep8'
+
+  -- Git related plugins
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
+  use 'lewis6991/gitsigns.nvim'
+
+  use 'nvim-lualine/lualine.nvim' -- Fancier statusline
+  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
+  use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+
+  -- themes
+  use 'rose-pine/neovim'
 end)
