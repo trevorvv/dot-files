@@ -58,5 +58,5 @@ return require('packer').startup(function(use)
   use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
 
   -- themes
-  use 'luisiacc/gruvbox-baby'
+  use 'aktersnurra/no-clown-fiesta.nvim'
 end)
