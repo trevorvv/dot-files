@@ -55,9 +55,13 @@ end
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
-  clangd = {},
-  gopls = {},
-  pyright = {},
+   clangd = {},
+   gopls = {},
+   pylsp = {},
+   rust_analyzer = {},
+   asm_lsp = {},
+   awk_ls = {},
+   cmake = {},
 }
 
 -- Setup neovim lua configuration

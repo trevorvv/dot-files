@@ -19,7 +19,6 @@ return require('packer').startup(function(use)
   after = 'nvim-treesitter',
   }
   use('nvim-treesitter/playground')
-  use('theprimeagen/harpoon')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
@@ -58,5 +57,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
 
   -- themes
-  use 'luisiacc/gruvbox-baby'
+  use 'aktersnurra/no-clown-fiesta.nvim'
+  use 'xiyaowong/transparent.nvim'
 end)
