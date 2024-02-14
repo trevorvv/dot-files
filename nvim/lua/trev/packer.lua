@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'nvim-treesitter/nvim-treesitter'
+  use 'Theprimeagen/harpoon'
 
   use { -- Additional text objects via treesitter
   'nvim-treesitter/nvim-treesitter-textobjects',

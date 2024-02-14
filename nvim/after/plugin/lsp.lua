@@ -58,10 +58,9 @@ local servers = {
    clangd = {},
    gopls = {},
    pylsp = {},
-   rust_analyzer = {},
    asm_lsp = {},
-   awk_ls = {},
    cmake = {},
+   rust_analyzer = {},
 }
 
 -- Setup neovim lua configuration
